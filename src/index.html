@@ -4,9 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/journal.css">
+  <title>Daily Journal</title>
 </head>
 <body>
-  
+  <h1>Daily Journal</h1>
+  <!-- series of entry fields for journal -->
+    <div class="date">
+      <form action="">
+        <fieldset>
+          <label for="journalDate">Date of Entry</label>
+          <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+      </form>
+    </div>
+    <div class="concepts">
+      <form action="">
+        <fieldset>
+          <label for="conceptsCovered">Concepts Covered</label>
+          <input type="text" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+      </form>
+    </div>
+    <div class="entry">
+      <form action="">
+        <fieldset>
+          <label for="journalEntry">Journal Entry</label>
+          <textarea rows="3" columns="50" name="journalEntry" id="journalEntry"></textarea>
+         </fieldset>
+       </form>
+    </div>
+    <div class="mood">
+      <form action="">
+        <fieldset>
+          <label for="mood">Mood of the Day </label>
+          <select type="select" name="mood" id="mood">
+            <option value="Happy">Happy</option>
+             <option value="Sad">Sad</option>
+             <option value="Stoked">Stoked</option>
+             <option value="Anxious">Anxious</option>
+             <option value="Overwhelmed">Overwhelmed</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <!-- button to submit entries -->
+    <div class="button">
+      <button type="button">Record Journal Entry</button>
+    </div>
 </body>
 </html>
