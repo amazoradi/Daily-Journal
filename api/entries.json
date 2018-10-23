@@ -1,0 +1,22 @@
+{
+  "journalEntries": [
+    {
+      "date": "10/01/2018",
+      "concept": "Into to NSS",
+      "entry": "Today was the first day of a new chapter; we now know what we are getting ourselves into.",
+      "mood": "excited"
+    },
+    {
+      "date": "10/18/2018",
+      "concept": "Intro to API",
+      "entry": "We looked at how to look at and get, use and change information from big JSON databases",
+      "mood": "overwhelmed"
+    },
+    {
+      "date": "10/19/2018",
+      "concept": "Lab Day",
+      "entry": "I'm ready to take on all the things now! Challenges, come at me.",
+      "mood": "ready"
+    }
+  ]
+}
