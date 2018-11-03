@@ -1,5 +1,5 @@
-    {
-      "journalEntries": [
+{
+  "journalEntries": [
     {
       "date": "10/01/2018",
       "concept": "Intro to NSS",
@@ -20,6 +20,20 @@
       "entry": "I'm ready to take on all the things now! Challenges, come at me.",
       "mood": "ready",
       "id": 3
+    },
+    {
+      "date": "2018-11-03",
+      "concept": "post",
+      "entry": "posting makes some sense now",
+      "mood": "Happy",
+      "id": 4
+    },
+    {
+      "date": "2018-11-15",
+      "concept": "script tags",
+      "entry": "i think i got it",
+      "mood": "Happy",
+      "id": 5
     }
   ]
 }

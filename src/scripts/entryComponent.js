@@ -1,8 +1,7 @@
 let entryArt = document.querySelector(".entryLog");
 
 const putOnDOM = {
- domCreation(entries) {
-  entries.forEach(entry => {
+  postNewEntry(entry) {
     let entryTitle = elementCreator.elementFactory("h2", entry.concept)
     let entryContent = elementCreator.elementFactory("p", `${entry.entry} I am ${entry.mood}. ${entry.date}`)
     let entryHolder = elementCreator.elementFactory("section", null, entryTitle, entryContent)
@@ -10,6 +9,11 @@ const putOnDOM = {
     let fragment = document.createDocumentFragment()
     fragment.appendChild(entryHolder)
     entryArt.appendChild(fragment)
-  });
-} 
+  },
+  domCreation(entries) {
+    entries.forEach(entry => {
+      putOnDOM.postNewEntry(entry)
+
+    })
+  }
 }
