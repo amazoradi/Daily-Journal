@@ -12,12 +12,13 @@
 <body>
   <h1>Daily Journal</h1>
   <!-- series of entry fields for journal -->
+  <div id="createAndShow">
   <article class="newEntryForms">
     <div class="date">
       <form action="">
         <fieldset>
           <label for="journalDate">Date of Entry</label>
-          <input type="date" name="journalDate" id="journalDate">
+          <input type="date" name="journalDate" id="journalDate" class="journal-input" required>
         </fieldset>
       </form>
     </div>
@@ -25,7 +26,7 @@
       <form action="">
         <fieldset>
           <label for="conceptsCovered">Concepts Covered</label>
-          <input type="text" name="conceptsCovered" id="conceptsCovered">
+          <input type="text" name="conceptsCovered" id="conceptsCovered" class="journal-input" required> 
         </fieldset>
       </form>
     </div>
@@ -33,7 +34,7 @@
       <form action="">
         <fieldset>
           <label for="journalEntry">Journal Entry</label>
-          <textarea rows="3" columns="50" name="journalEntry" id="journalEntry"></textarea>
+          <textarea rows="3" columns="50" name="journalEntry" id="journalEntry"class="journal-input" required></textarea>
         </fieldset>
       </form>
     </div>
@@ -41,7 +42,7 @@
       <form action="">
         <fieldset>
           <label for="mood">Mood of the Day </label>
-          <select type="select" name="mood" id="mood">
+          <select type="select" name="mood" id="mood" class="journal-input" required>
             <option value="Happy">Happy</option>
             <option value="Sad">Sad</option>
             <option value="Stoked">Stoked</option>
@@ -56,17 +57,19 @@
 
   <!-- button to submit entries -->
   <div class="button">
-    <button type="button">Record Journal Entry</button>
+    <button type="button" id="record-button">Record Journal Entry</button>
   </div>
   <article class="entryLog">
 
   </article>
-  
+  </div>
   <!-- js script tags -->
   <script src="scripts/entriesDOM.js"></script>
   <script src="scripts/entryComponent.js"></script>
   <script src="scripts/data.js"></script>
+<script src="scripts/formValidation.js"></script>
   <script src="scripts/journal.js"></script>
+
 </body>
 
 </html>
