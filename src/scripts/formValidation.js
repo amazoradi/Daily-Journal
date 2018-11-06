@@ -1,15 +1,15 @@
 function validateEntry(entryObject) {
 
-  if (entryObject.date.value === "") {
+  if (entryObject.date === "") {
     console.log("Hold up")
     alert("Please fill out all sections")
-  } else if (entryObject.concept.value === "") {
+  } else if (entryObject.concept === "") {
     console.log("Hold up")
     alert("Please fill out all sections")
-  } else if (entryObject.entry.value === "") {
+  } else if (entryObject.entry === "") {
     console.log("Hold up")
     alert("Please fill out all sections")
-  } else if (entryObject.mood.value === "") {
+  } else if (entryObject.mood === "") {
     console.log("Hold up")
     alert("Please fill out all sections")
   } else {

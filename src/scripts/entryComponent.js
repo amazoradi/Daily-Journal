@@ -1,4 +1,4 @@
-let entryArt = document.querySelector(".entryLog");
+let entryArt = $(".entryLog");
 
 const putOnDOM = {
   postNewEntry(entry) {
@@ -8,7 +8,7 @@ const putOnDOM = {
     //appending our new elements to the fragment then the fragment to or article  
     let fragment = document.createDocumentFragment()
     fragment.appendChild(entryHolder)
-    entryArt.appendChild(fragment)
+    entryArt.append(fragment)
   },
   domCreation(entries) {
     entries.forEach(entry => {

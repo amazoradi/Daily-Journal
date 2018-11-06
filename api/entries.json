@@ -34,6 +34,27 @@
       "entry": "It seems like this could save a lot of time, but its a little foreign right now. Also, may be a trap",
       "mood": "Stoked",
       "id": 5
+    },
+    {
+      "date": "2018-11-09",
+      "concept": "Click events",
+      "entry": "I think it works",
+      "mood": "Stoked",
+      "id": 6
+    },
+    {
+      "date": "2018-11-07",
+      "concept": "getting a job",
+      "entry": "oh boy i need to start networking. I need to get that job!",
+      "mood": "Anxious",
+      "id": 7
+    },
+    {
+      "date": "2018-11-06",
+      "concept": "Still JQuery",
+      "entry": "how is this still going...",
+      "mood": "Sad",
+      "id": 8
     }
   ]
 }

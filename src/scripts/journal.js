@@ -7,65 +7,34 @@ API.getJournalEntries().then(entries => putOnDOM.domCreation(entries))
 
 function createEvent() {
   let recordButton = $("#record-button")
-  $(recordButton).click( () => {
+  $(recordButton).click(() => {
     let entryObject = {
-    "date": $("#journalDate").val(),
-    "concept": $("#conceptsCovered").val(),
-    "entry": $("#journalEntry").val(),
-    "mood": $("#mood").val()
+      "date": $("#journalDate").val(),
+      "concept": $("#conceptsCovered").val(),
+      "entry": $("#journalEntry").val(),
+      "mood": $("#mood").val()
     }
-    validateEntry(entryObject) 
-  } )}
-  
+    validateEntry(entryObject)
+  })
+}
+
 
 createEvent()
 
 
-// function moodButtonValue () {
-//   let radioMood = $(".radioMood:checked")
-//   console.log(radioMood)
-//    radioMood.click(() => {
-//       let filteredMood = radioMood.val()
-//       let entryDiv = $(".entrySection")
-//       entryDiv.forEach(entry => {
-//         entry.classList.add("hidden")
-//       })
-//       filterMood(filteredMood)
-//   })
-// }
-
- 
-
-  // console.log(radioMood)
-  //  document.getElementsByName("mood")
-// radioMood.forEach(button => {
-//     $(button).click(()=> {
-//       let filteredMood = button.value
-//       let entryDiv = document.querySelectorAll(".entrySection")
-//       entryDiv.forEach(entry => {
-//         entry.classList.add("hidden")
-//     })
-//   })
-
 function moodButtonValue() {
-  let radioMood = document.getElementsByName("mood")
-  radioMood.forEach(button => {
-    button.addEventListener("click", () => {
-      console.log(button.value)
-      let filteredMood = button.value
-      let entryDiv = document.querySelectorAll(".entrySection")
-      entryDiv.forEach(entry => {
-        entry.classList.add("hidden")
-      })
-      filterMood(filteredMood)
-    })
+  $("input[type=radio][name=mood]").click(() => {
+    let radioMood = $("input[type=radio][name=mood]:checked").val()
+    let entryDiv = $(".entrySection")
+    $(entryDiv).addClass("hidden")
+    filterMood(radioMood)
   })
 }
 
 moodButtonValue()
 
-function filterMood (mood) {
-   API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(filteredEntry => putOnDOM.domCreation(filteredEntry))
+function filterMood(mood) {
+  API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(filteredEntry => putOnDOM.domCreation(filteredEntry))
 }
 
 
