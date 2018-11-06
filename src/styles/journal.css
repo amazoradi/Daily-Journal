@@ -52,3 +52,15 @@ body {
   padding: 5px;
   margin: 5px;
 }
+
+.hidden {
+  display: none;
+}
+.moodRadioButtons input {
+  margin: 0px;
+  display: inline;
+}
+
+.moodRadioButtons {
+  margin: 10px;
+}
