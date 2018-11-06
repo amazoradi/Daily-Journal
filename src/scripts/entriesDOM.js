@@ -2,8 +2,8 @@
 const elementCreator = {
   elementFactory(el, cont, clazz, id, ...children) {
     let element = document.createElement(el)
-    element.innerHTML = cont || null
-    element.setAttribute("class", clazz || null)
+    $(element).html(cont || null)
+    $(element).addClass(clazz || null)
     element.setAttribute("id", id || null)
     children.forEach(child => {
       element.appendChild(child)
