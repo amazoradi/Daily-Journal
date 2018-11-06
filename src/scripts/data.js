@@ -1,4 +1,6 @@
-// creating an objec that is fetching our data
+import putOnDOM from "./entryComponent"
+
+// creating an object that is fetching our data, both getting from our local database and posting new user input into our database
 const API = {
   getJournalEntries() {
     return fetch("http://localhost:8088/journalEntries")
@@ -15,3 +17,5 @@ const API = {
       .then(newEntry => putOnDOM.postNewEntry(newEntry))
   }
 }
+
+export default API

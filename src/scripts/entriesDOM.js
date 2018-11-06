@@ -12,3 +12,6 @@ const elementCreator = {
     return element
   }
 }
+
+
+export default elementCreator
