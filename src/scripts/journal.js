@@ -6,24 +6,48 @@ API.getJournalEntries().then(entries => putOnDOM.domCreation(entries))
 // add a click event listener to the Record Journal Entry button at the bottom of your form. When the user clicks the button, you need to create a new entry in your API. The HTTP method that you use to create resources is POST. Guidance on syntax is provided below.
 
 function createEvent() {
-  let recordButton = document.getElementById("record-button")
-  recordButton.addEventListener("click", () => {
-    console.log("click")
+  let recordButton = $("#record-button")
+  $(recordButton).click( () => {
     let entryObject = {
-      "date": document.getElementById("journalDate").value,
-      "concept": document.getElementById("conceptsCovered").value,
-      "entry": document.getElementById("journalEntry").value,
-      "mood": document.getElementById("mood").value
+    "date": $("#journalDate").val(),
+    "concept": $("#conceptsCovered").val(),
+    "entry": $("#journalEntry").val(),
+    "mood": $("#mood").val()
     }
-    console.log(entryObject)
-    validateEntry(entryObject)
-  })
-}
+    validateEntry(entryObject) 
+  } )}
+  
 
 createEvent()
 
 
-function moodButtonValue () {
+// function moodButtonValue () {
+//   let radioMood = $(".radioMood:checked")
+//   console.log(radioMood)
+//    radioMood.click(() => {
+//       let filteredMood = radioMood.val()
+//       let entryDiv = $(".entrySection")
+//       entryDiv.forEach(entry => {
+//         entry.classList.add("hidden")
+//       })
+//       filterMood(filteredMood)
+//   })
+// }
+
+ 
+
+  // console.log(radioMood)
+  //  document.getElementsByName("mood")
+// radioMood.forEach(button => {
+//     $(button).click(()=> {
+//       let filteredMood = button.value
+//       let entryDiv = document.querySelectorAll(".entrySection")
+//       entryDiv.forEach(entry => {
+//         entry.classList.add("hidden")
+//     })
+//   })
+
+function moodButtonValue() {
   let radioMood = document.getElementsByName("mood")
   radioMood.forEach(button => {
     button.addEventListener("click", () => {
@@ -32,8 +56,8 @@ function moodButtonValue () {
       let entryDiv = document.querySelectorAll(".entrySection")
       entryDiv.forEach(entry => {
         entry.classList.add("hidden")
-      }) 
-    filterMood(filteredMood)
+      })
+      filterMood(filteredMood)
     })
   })
 }

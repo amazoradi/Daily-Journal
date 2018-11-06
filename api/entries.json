@@ -27,6 +27,13 @@
       "entry": "I think i got it to work",
       "mood": "Happy",
       "id": 4
+    },
+    {
+      "date": "2018-11-06",
+      "concept": "Jquery",
+      "entry": "It seems like this could save a lot of time, but its a little foreign right now. Also, may be a trap",
+      "mood": "Stoked",
+      "id": 5
     }
   ]
 }
