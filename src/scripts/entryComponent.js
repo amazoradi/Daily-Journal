@@ -1,3 +1,5 @@
+import elementCreator from "./entriesDOM"
+
 let entryArt = document.querySelector(".entryLog");
 
 const putOnDOM = {
@@ -17,3 +19,6 @@ const putOnDOM = {
     })
   }
 }
+
+
+export default putOnDOM

@@ -55,6 +55,13 @@
       "entry": "how is this still going...",
       "mood": "Sad",
       "id": 8
+    },
+    {
+      "date": "2018-11-06",
+      "concept": "Browserify",
+      "entry": "WOW! I just was able to make my code work with browserify  on the first try. look at me go.",
+      "mood": "Stoked",
+      "id": 9
     }
   ]
 }

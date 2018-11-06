@@ -1,3 +1,7 @@
+import API from "./data"
+
+
+
 function validateEntry(entryObject) {
 
   if (entryObject.date === "") {
@@ -16,3 +20,5 @@ function validateEntry(entryObject) {
     API.addToJournal(entryObject)
   }
 }
+
+export default validateEntry
