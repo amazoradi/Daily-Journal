@@ -29,8 +29,10 @@ function moodButtonValue () {
     button.addEventListener("click", () => {
       console.log(button.value)
       let filteredMood = button.value
-
-      // call some function here
+      let entryDiv = document.querySelectorAll(".entrySection")
+      entryDiv.forEach(entry => {
+        entry.classList.add("hidden")
+      }) 
     filterMood(filteredMood)
     })
   })
@@ -39,7 +41,7 @@ function moodButtonValue () {
 moodButtonValue()
 
 function filterMood (mood) {
-  API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(response => console.log(response))
+   API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(filteredEntry => putOnDOM.domCreation(filteredEntry))
 }
 
 
