@@ -18,7 +18,6 @@ function createEvent() {
   })
 }
 
-
 createEvent()
 
 
@@ -32,6 +31,7 @@ function moodButtonValue() {
 }
 
 moodButtonValue()
+
 
 function filterMood(mood) {
   API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(filteredEntry => putOnDOM.domCreation(filteredEntry))
