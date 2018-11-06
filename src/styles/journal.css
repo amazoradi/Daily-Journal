@@ -52,3 +52,15 @@ body {
   padding: 5px;
   margin: 5px;
 }
+#filterMood div{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  border: 1px solid rebeccapurple;
+}
+
+#selectMood {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}

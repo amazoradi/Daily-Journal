@@ -13,61 +13,92 @@
   <h1>Daily Journal</h1>
   <!-- series of entry fields for journal -->
   <div id="createAndShow">
-  <article class="newEntryForms">
-    <div class="date">
-      <form action="">
-        <fieldset>
-          <label for="journalDate">Date of Entry</label>
-          <input type="date" name="journalDate" id="journalDate" class="journal-input" required>
-        </fieldset>
-      </form>
-    </div>
-    <div class="concepts">
-      <form action="">
-        <fieldset>
-          <label for="conceptsCovered">Concepts Covered</label>
-          <input type="text" name="conceptsCovered" id="conceptsCovered" class="journal-input" required> 
-        </fieldset>
-      </form>
-    </div>
-    <div class="entry">
-      <form action="">
-        <fieldset>
-          <label for="journalEntry">Journal Entry</label>
-          <textarea rows="3" columns="50" name="journalEntry" id="journalEntry"class="journal-input" required></textarea>
-        </fieldset>
-      </form>
-    </div>
-    <div class="mood">
-      <form action="">
-        <fieldset>
-          <label for="mood">Mood of the Day </label>
-          <select type="select" name="mood" id="mood" class="journal-input" required>
-            <option value="Happy">Happy</option>
-            <option value="Sad">Sad</option>
-            <option value="Stoked">Stoked</option>
-            <option value="Anxious">Anxious</option>
-            <option value="Overwhelmed">Overwhelmed</option>
-            <option value="Ready">Ready</option>
-          </select>
-        </fieldset>
-      </form>
-    </div>
-  </article>
+    <article class="newEntryForms">
+      <div class="date">
+        <form action="">
+          <fieldset>
+            <label for="journalDate">Date of Entry</label>
+            <input type="date" name="journalDate" id="journalDate" class="journal-input" required>
+          </fieldset>
+        </form>
+      </div>
+      <div class="concepts">
+        <form action="">
+          <fieldset>
+            <label for="conceptsCovered">Concepts Covered</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered" class="journal-input" required>
+          </fieldset>
+        </form>
+      </div>
+      <div class="entry">
+        <form action="">
+          <fieldset>
+            <label for="journalEntry">Journal Entry</label>
+            <textarea rows="3" columns="50" name="journalEntry" id="journalEntry" class="journal-input" required></textarea>
+          </fieldset>
+        </form>
+      </div>
+      <div class="mood">
+        <form action="">
+          <fieldset>
+            <label for="mood">Mood of the Day </label>
+            <select type="select" name="moods" id="mood" class="journal-input" required>
+              <option value="Happy">Happy</option>
+              <option value="Sad">Sad</option>
+              <option value="Stoked">Stoked</option>
+              <option value="Anxious">Anxious</option>
+              <option value="Overwhelmed">Overwhelmed</option>
+              <option value="Ready">Ready</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
+    </article>
 
-  <!-- button to submit entries -->
-  <div class="button">
-    <button type="button" id="record-button">Record Journal Entry</button>
-  </div>
-  <article class="entryLog">
+    <!-- button to submit entries -->
+    <div class="button">
+      <button type="button" id="record-button">Record Journal Entry</button>
+    </div>
+    <div id="selecctMood">
+      <fieldset id="filterMood">
+        <legend>Filter Journal Entries By Mood
+          <div>
+            <input type="radio" name="mood" id="happy" value="Happy" class="radioMood">
+            <label for="happy">Happy</label>
+          </div>
+          <div>
+            <input type="radio" name="mood" id="sad" value="Sad" class="radioMood">
+            <label for="sad">Sad</label>
+          </div>
+          <div>
+            <input type="radio" name="mood" id="stoked" value="Stoked" class="radioMood">
+            <label for="stoked">Stoked</label>
+          </div>
+          <div>
+            <input type="radio" name="mood" id="anxious" value="Anxious" class="radioMood">
+            <label for="anxious">Anxious</label>
+          </div>
+          <div>
+            <input type="radio" name="mood" id="overwhelmed" value="Overwhelmed" class="radioMood">
+            <label for="overwhelmed">Overwhelmed</label>
+          </div>
+          <div>
+            <input type="radio" name="mood" id="ready" value="Ready" class="radioMood">
+            <label for="ready">Ready</label>
+          </div>
+        </legend>
+      </fieldset>
+    </div>
 
-  </article>
+    <article class="entryLog">
+
+    </article>
   </div>
   <!-- js script tags -->
   <script src="scripts/entriesDOM.js"></script>
   <script src="scripts/entryComponent.js"></script>
   <script src="scripts/data.js"></script>
-<script src="scripts/formValidation.js"></script>
+  <script src="scripts/formValidation.js"></script>
   <script src="scripts/journal.js"></script>
 
 </body>

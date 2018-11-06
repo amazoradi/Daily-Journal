@@ -23,6 +23,24 @@ function createEvent() {
 createEvent()
 
 
+function moodButtonValue () {
+  let radioMood = document.getElementsByName("mood")
+  radioMood.forEach(button => {
+    button.addEventListener("click", () => {
+      console.log(button.value)
+      let filteredMood = button.value
+
+      // call some function here
+    filterMood(filteredMood)
+    })
+  })
+}
+
+moodButtonValue()
+
+function filterMood (mood) {
+  API.getJournalEntries().then(responses => responses.filter(response => response.mood === mood)).then(response => console.log(response))
+}
 
 
 // Using required attribute to ensure no blank entries
