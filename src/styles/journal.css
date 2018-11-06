@@ -52,19 +52,34 @@ body {
   padding: 5px;
   margin: 5px;
 }
-#filterMood div{
+.moodRadioButtons div{
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap; */
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
+  /* display: inline; */
 }
 
-#selectMood {
-  display: flex;
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-}
+/* #selectMood {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   display: inline;
+  padding: 10px;
+} */
+/* #filterMood {
+  display: inline;
+  margin: 10px;
+} */
 
 .hidden {
   display: none;
+}
+.moodRadioButtons input {
+  margin: 0px;
+  display: inline;
+}
+
+.moodRadioButtons {
+  margin: 10px;
 }
