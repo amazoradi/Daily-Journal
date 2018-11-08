@@ -63,5 +63,31 @@
       "mood": "Stoked",
       "id": 9
     }
+  ],
+  "mood": [
+    {
+      "id": 1,
+      "label": "Happy"
+    },
+    {
+      "id": 2,
+      "label": "Sad"
+    },
+    {
+      "id": 3,
+      "label": "Stoked"
+    },
+    {
+      "id": 4,
+      "label": "Anxious"
+    },
+    {
+      "id": 5,
+      "label": "Overwhelmed"
+    },
+    {
+      "id": 6,
+      "label": "Ready"
+    }
   ]
 }
