@@ -1,4 +1,4 @@
-import putOnDOM from "./entryComponent"
+import clearAndAdd from "./clearRepopDOM"
 
 // creating an object that is fetching our data, both getting from our local database and posting new user input into our database
 const API = {
@@ -14,8 +14,17 @@ const API = {
       },
       body: JSON.stringify(newEntry)
     }).then(data => data.json())
-      .then(newEntry => putOnDOM.postNewEntry(newEntry))
-  }
+      // .then(newEntry => putOnDOM.postNewEntry(newEntry))
+      .then(clearAndAdd()) 
+  },
+   getJournalMoods() {
+    return fetch("http://localhost:8088/journalEntries?_expand=mood")
+      .then(response => response.json())  
+  }, getJournalMoodIds(mood) {
+    return fetch(`http://localhost:8088/moods?id=${mood}`)
+      .then(response => response.json())
+      
+}
 }
 
 export default API

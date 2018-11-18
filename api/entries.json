@@ -4,67 +4,67 @@
       "date": "10/01/2018",
       "concept": "Intro to NSS",
       "entry": "Today was the first day of a new chapter; we now know what we are getting ourselves into.",
-      "mood": "Happy",
+      "moodId": 1,
       "id": 1
     },
     {
       "date": "10/18/2018",
       "concept": "Intro to API",
       "entry": "We looked at how to get, use, and change information from big JSON databases",
-      "mood": "Overwhelmed",
+      "moodId": 5,
       "id": 2
     },
     {
       "date": "10/19/2018",
       "concept": "Lab Day",
       "entry": "I'm ready to take on all the things now! Challenges, come at me.",
-      "mood": "Ready",
+      "moodId": 6,
       "id": 3
     },
     {
       "date": "2018-11-06",
       "concept": "Radio buttons/filter",
       "entry": "I think i got it to work",
-      "mood": "Happy",
+      "moodId": 1,
       "id": 4
     },
     {
       "date": "2018-11-06",
       "concept": "Jquery",
       "entry": "It seems like this could save a lot of time, but its a little foreign right now. Also, may be a trap",
-      "mood": "Stoked",
+      "moodId": 3,
       "id": 5
     },
     {
       "date": "2018-11-09",
       "concept": "Click events",
       "entry": "I think it works",
-      "mood": "Stoked",
+      "moodId": 3,
       "id": 6
     },
     {
       "date": "2018-11-07",
       "concept": "getting a job",
       "entry": "oh boy i need to start networking. I need to get that job!",
-      "mood": "Anxious",
+      "moodId": 4,
       "id": 7
     },
     {
       "date": "2018-11-06",
       "concept": "Still JQuery",
       "entry": "how is this still going...",
-      "mood": "Sad",
+      "moodId": 2,
       "id": 8
     },
     {
       "date": "2018-11-06",
       "concept": "Browserify",
       "entry": "WOW! I just was able to make my code work with browserify  on the first try. look at me go.",
-      "mood": "Stoked",
+      "moodId": 3,
       "id": 9
     }
   ],
-  "mood": [
+  "moods": [
     {
       "id": 1,
       "label": "Happy"
