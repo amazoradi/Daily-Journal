@@ -10,6 +10,13 @@ const elementCreator = {
     })
     // returns our created elements when called
     return element
+  },
+
+  dropdownFactory(id, label) {
+    let element = document.createElement("option")
+    element.setAttribute("value", id)
+    element.innerHTML = label
+    return element
   }
 }
 

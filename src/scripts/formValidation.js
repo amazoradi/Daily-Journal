@@ -1,5 +1,5 @@
 import API from "./data"
-
+import clearAndAdd from "./clearRepopDOM"
 
 
 function validateEntry(entryObject) {
@@ -18,6 +18,7 @@ function validateEntry(entryObject) {
     alert("Please fill out all sections")
   } else {
     API.addToJournal(entryObject)
+      .then(resposne => clearAndAdd())
   }
 }
 

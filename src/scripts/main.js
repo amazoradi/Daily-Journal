@@ -2,6 +2,7 @@ import API from "./data"
 import putOnDOM from "./entryComponent"
 import moodButtonValue from "./radioButtonSelect"
 import createEvent from "./sumbitClick"
+import elementCreator from "./DOMElements"
 
 
 
@@ -9,9 +10,31 @@ import createEvent from "./sumbitClick"
 
 API.getJournalEntries().then(entries => putOnDOM.domCreation(entries))
 
+
 // showing only our selected journal entries
 moodButtonValue()
 
 // allows for user input to be saved to DOM
 createEvent()
+
+
+// creates the mood dropdowns
+API.getMoods().then(objs => {
+  objs.forEach(obj => {
+    let newMoodOption = elementCreator.dropdownFactory(obj.id, obj.label)
+    let moodInput = document.getElementById("moodSelect")
+    moodInput.appendChild(newMoodOption)
+  });
+}
+)
+
+API.getInstructors().then(objs => {
+  objs.forEach(obj => {
+    let fullName = `${obj.firstName} ${obj.lastName}`
+    let newInstructorOption = elementCreator.dropdownFactory(obj.id, fullName)
+    let instructorInput = document.getElementById("instructorSelect")
+    instructorInput.appendChild(newInstructorOption)
+  });
+}
+)
 

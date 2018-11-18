@@ -4,10 +4,10 @@ module.exports = {
       "../scripts/**/*.js",
       "!node_modules/**/*.js"
     ],
-    tasks: ["eslint"],
+    tasks: ["eslint", "browserify"],
     options: {
       spawn: false,
-      debounceDelay: 1000
+      debounceDelay: 500
     }
   }
 }

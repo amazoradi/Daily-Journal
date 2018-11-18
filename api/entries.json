@@ -4,64 +4,132 @@
       "date": "10/01/2018",
       "concept": "Intro to NSS",
       "entry": "Today was the first day of a new chapter; we now know what we are getting ourselves into.",
-      "mood": "Happy",
+      "moodId": 1,
+      "instructorId": 1,
       "id": 1
     },
     {
       "date": "10/18/2018",
       "concept": "Intro to API",
       "entry": "We looked at how to get, use, and change information from big JSON databases",
-      "mood": "Overwhelmed",
+      "moodId": 5,
+      "instructorId": 1,
       "id": 2
     },
     {
       "date": "10/19/2018",
       "concept": "Lab Day",
       "entry": "I'm ready to take on all the things now! Challenges, come at me.",
-      "mood": "Ready",
+      "moodId": 6,
+      "instructorId": 3,
       "id": 3
     },
     {
       "date": "2018-11-06",
       "concept": "Radio buttons/filter",
       "entry": "I think i got it to work",
-      "mood": "Happy",
+      "moodId": 1,
+      "instructorId": 1,
       "id": 4
     },
     {
       "date": "2018-11-06",
       "concept": "Jquery",
       "entry": "It seems like this could save a lot of time, but its a little foreign right now. Also, may be a trap",
-      "mood": "Stoked",
+      "moodId": 3,
+      "instructorId": 2,
       "id": 5
     },
     {
       "date": "2018-11-09",
       "concept": "Click events",
       "entry": "I think it works",
-      "mood": "Stoked",
+      "moodId": 3,
+      "instructorId": 1,
       "id": 6
     },
     {
       "date": "2018-11-07",
       "concept": "getting a job",
       "entry": "oh boy i need to start networking. I need to get that job!",
-      "mood": "Anxious",
+      "moodId": 4,
+      "instructorId": 1,
       "id": 7
     },
     {
       "date": "2018-11-06",
       "concept": "Still JQuery",
       "entry": "how is this still going...",
-      "mood": "Sad",
+      "moodId": 2,
+      "instructorId": 2,
       "id": 8
     },
     {
       "date": "2018-11-06",
       "concept": "Browserify",
       "entry": "WOW! I just was able to make my code work with browserify  on the first try. look at me go.",
-      "mood": "Stoked",
+      "moodId": 3,
+      "instructorId": 2,
       "id": 9
+    },
+    {
+      "date": "2018-11-17",
+      "concept": "Expand",
+      "entry": "Expanding a key in an API object is tough to master, this is magnified when promises are not being fullfilled when you expect them to.",
+      "moodId": 5,
+      "instructorId": 3,
+      "id": 10
+    },
+    {
+      "date": "2018-11-18",
+      "concept": "Expand Challenge",
+      "entry": "I was able to get the challenge completed!!",
+      "moodId": 3,
+      "instructorId": 1,
+      "id": 11
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Happy"
+    },
+    {
+      "id": 2,
+      "label": "Sad"
+    },
+    {
+      "id": 3,
+      "label": "Stoked"
+    },
+    {
+      "id": 4,
+      "label": "Anxious"
+    },
+    {
+      "id": 5,
+      "label": "Overwhelmed"
+    },
+    {
+      "id": 6,
+      "label": "Ready"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "firstName": "Joe",
+      "lastName": "Shepherd"
+    },
+    {
+      "id": 2,
+      "firstName": "Greg",
+      "lastName": "Korte"
+    },
+    {
+      "id": 3,
+      "firstName": "Jenna",
+      "lastName": "Solis"
     }
   ]
 }
