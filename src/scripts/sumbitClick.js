@@ -8,7 +8,8 @@ function createEvent() {
       "date": $("#journalDate").val(),
       "concept": $("#conceptsCovered").val(),
       "entry": $("#journalEntry").val(),
-      "moodId": +$("#moodSelect").val()
+      "moodId": +$("#moodSelect").val(),
+      "instructorId": +$("#instructorSelect").val()
     }
     validateEntry(entryObject)
   })

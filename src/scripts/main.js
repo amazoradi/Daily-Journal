@@ -25,7 +25,16 @@ API.getMoods().then(objs => {
     let moodInput = document.getElementById("moodSelect")
     moodInput.appendChild(newMoodOption)
   });
+}
+)
 
+API.getInstructors().then(objs => {
+  objs.forEach(obj => {
+    let fullName = `${obj.firstName} ${obj.lastName}`
+    let newInstructorOption = elementCreator.dropdownFactory(obj.id, fullName)
+    let instructorInput = document.getElementById("instructorSelect")
+    instructorInput.appendChild(newInstructorOption)
+  });
 }
 )
 

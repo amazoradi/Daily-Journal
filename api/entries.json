@@ -5,6 +5,7 @@
       "concept": "Intro to NSS",
       "entry": "Today was the first day of a new chapter; we now know what we are getting ourselves into.",
       "moodId": 1,
+      "instructorId": 1,
       "id": 1
     },
     {
@@ -12,6 +13,7 @@
       "concept": "Intro to API",
       "entry": "We looked at how to get, use, and change information from big JSON databases",
       "moodId": 5,
+      "instructorId": 1,
       "id": 2
     },
     {
@@ -19,6 +21,7 @@
       "concept": "Lab Day",
       "entry": "I'm ready to take on all the things now! Challenges, come at me.",
       "moodId": 6,
+      "instructorId": 3,
       "id": 3
     },
     {
@@ -26,6 +29,7 @@
       "concept": "Radio buttons/filter",
       "entry": "I think i got it to work",
       "moodId": 1,
+      "instructorId": 1,
       "id": 4
     },
     {
@@ -33,6 +37,7 @@
       "concept": "Jquery",
       "entry": "It seems like this could save a lot of time, but its a little foreign right now. Also, may be a trap",
       "moodId": 3,
+      "instructorId": 2,
       "id": 5
     },
     {
@@ -40,6 +45,7 @@
       "concept": "Click events",
       "entry": "I think it works",
       "moodId": 3,
+      "instructorId": 1,
       "id": 6
     },
     {
@@ -47,6 +53,7 @@
       "concept": "getting a job",
       "entry": "oh boy i need to start networking. I need to get that job!",
       "moodId": 4,
+      "instructorId": 1,
       "id": 7
     },
     {
@@ -54,6 +61,7 @@
       "concept": "Still JQuery",
       "entry": "how is this still going...",
       "moodId": 2,
+      "instructorId": 2,
       "id": 8
     },
     {
@@ -61,6 +69,7 @@
       "concept": "Browserify",
       "entry": "WOW! I just was able to make my code work with browserify  on the first try. look at me go.",
       "moodId": 3,
+      "instructorId": 2,
       "id": 9
     },
     {
@@ -68,7 +77,16 @@
       "concept": "Expand",
       "entry": "Expanding a key in an API object is tough to master, this is magnified when promises are not being fullfilled when you expect them to.",
       "moodId": 5,
+      "instructorId": 3,
       "id": 10
+    },
+    {
+      "date": "2018-11-18",
+      "concept": "Expand Challenge",
+      "entry": "I was able to get the challenge completed!!",
+      "moodId": 3,
+      "instructorId": 1,
+      "id": 11
     }
   ],
   "moods": [
@@ -95,6 +113,23 @@
     {
       "id": 6,
       "label": "Ready"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "firstName": "Joe",
+      "lastName": "Shepherd"
+    },
+    {
+      "id": 2,
+      "firstName": "Greg",
+      "lastName": "Korte"
+    },
+    {
+      "id": 3,
+      "firstName": "Jenna",
+      "lastName": "Solis"
     }
   ]
 }

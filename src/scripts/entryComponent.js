@@ -7,7 +7,7 @@ let entryArt = document.querySelector(".entryLog");
 const putOnDOM = {
   postNewEntry(entry) {
     let entryTitle = elementCreator.elementFactory("h2", entry.concept)
-    let entryContent = elementCreator.elementFactory("p", `${entry.entry} I am ${entry.mood.label}. ${entry.date}`)
+    let entryContent = elementCreator.elementFactory("p", `${entry.entry} I am ${entry.mood.label}. The instructor today was ${entry.instructor.firstName} ${entry.instructor.lastName}. ${entry.date}`)
     let entryHolder = elementCreator.elementFactory("section", null, "entrySection", `${entry.id}`, entryTitle, entryContent)
     //appending our new elements to the fragment then the fragment to or article  
     let fragment = document.createDocumentFragment()
