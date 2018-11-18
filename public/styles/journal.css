@@ -44,11 +44,11 @@ h1 {
 }
 
 body {
-  background-color: aliceblue
+  background-color: #b9dadb
 }
 
 .entryLog section {
-  border: 1px solid rebeccapurple;
+  border: 1px solid #8590a7;
   padding: 5px;
   margin: 5px;
 }
@@ -59,6 +59,10 @@ body {
 .moodRadioButtons input {
   margin: 0px;
   display: inline;
+}
+
+.entrySection:hover {
+  background-color:#d5eeec;
 }
 
 .moodRadioButtons {
