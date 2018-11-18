@@ -2,7 +2,7 @@ import API from "./data"
 import putOnDOM from "./entryComponent"
 import moodButtonValue from "./radioButtonSelect"
 import createEvent from "./sumbitClick"
-import elementCreator from "./entriesDOM"
+import elementCreator from "./DOMElements"
 
 
 

@@ -1,4 +1,4 @@
-import elementCreator from "./entriesDOM"
+import elementCreator from "./DOMElements"
 
 let entryArt = document.querySelector(".entryLog");
 
