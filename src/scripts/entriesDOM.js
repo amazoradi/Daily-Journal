@@ -11,12 +11,12 @@ const elementCreator = {
     // returns our created elements when called
     return element
   },
+
   dropdownFactory(id, label) {
-    let holder = document.createElement("select")
     let element = document.createElement("option")
     element.setAttribute("value", id)
-    element.innerHTML =label
-    holder.appendChild(element)
+    element.innerHTML = label
+    return element
   }
 }
 

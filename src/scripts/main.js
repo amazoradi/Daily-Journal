@@ -6,11 +6,10 @@ import elementCreator from "./entriesDOM"
 
 
 
-
 // accessing our data through the object previously defined. we call the method that fetches the data from the object, then go through our all of our data and passing that all our data into our dom creation function 
 
-API.getJournalMoods().then(entries => putOnDOM.domCreation(entries))
-// API.getJournalMoods()
+API.getJournalEntries().then(entries => putOnDOM.domCreation(entries))
+
 
 // showing only our selected journal entries
 moodButtonValue()
@@ -18,14 +17,15 @@ moodButtonValue()
 // allows for user input to be saved to DOM
 createEvent()
 
-// API.getJournalMoods().then(moods => putOnDOM.moodDropdown(moods))
 
-API.getJournalMoods().then( objs => {
+// creates the mood dropdowns
+API.getMoods().then(objs => {
   objs.forEach(obj => {
-    elementCreator.dropdownFactory(obj.id, obj.label)
-    
+    let newMoodOption = elementCreator.dropdownFactory(obj.id, obj.label)
+    let moodInput = document.getElementById("moodSelect")
+    moodInput.appendChild(newMoodOption)
   });
 
 }
-
 )
+
